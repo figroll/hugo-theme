@@ -1,0 +1,11 @@
+name = "Figroll"
+license = "MIT"
+licenselink = ""
+description = "Figroll is blog theme for hugo."
+tags = ["blog"]
+features = ["blog"]
+min_version = 0.15
+
+[author]
+    name = "Byron & Dryden Williams"
+    homepage = "https://www.figroll.io"

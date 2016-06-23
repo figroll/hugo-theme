@@ -1,0 +1,27 @@
+
+
+.site-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/*.site-content {
+  margin-top: 40px;
+}*/
+
+.masthead {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-image: url("../images/harbour.jpg");
+  margin-bottom: 40px;
+}
+@media (max-width: 768px) {
+  .masthead {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.masthead__title {
+  color: #FFF;
+}

@@ -1,0 +1,43 @@
+
+{{ partial "head.html" . }}
+{{ partial "header.html" . }}
+
+<main class="masthead">
+  <div class="container">
+    <div class="col-md-8 col-md-offset-2 text-center">
+        <h1 class="masthead__title">Figroll Theme</h1>
+    </div>
+  </div>
+</main>
+
+<div class="container site-content">
+  <div class="row">
+    <div class="col-md-9">
+
+      <div class="row">
+        {{ range $key, $value := .Paginator.Pages }}
+        {{ if lt $key 4 }}
+        <div class="col-sm-6">
+          {{ .Render "grid" }}
+        </div>
+        {{ else }}
+        <div class="col-sm-4">
+          {{ .Render "grid" }}
+        </div>
+        {{ end }}
+        {{ end }}
+      </div>
+
+      {{ partial "pagination.html" . }}
+
+    </div>
+
+    <div class="col-md-3">
+      {{ partial "sidebar.html" . }}
+    </div>
+
+  </div>
+
+</div>
+
+{{ partial "footer.html" . }}

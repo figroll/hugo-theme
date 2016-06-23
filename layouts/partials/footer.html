@@ -1,0 +1,15 @@
+<footer>
+  <div class="container">
+    <p>{{ with .Site.Copyright | safeHTML }}{{ . }}{{ else }}&copy; {{ $.Site.LastChange.Year }} {{ if isset $.Site.Params "Author" }}{{ $.Site.Params.Author }}{{ else }}{{ .Site.Title }}{{ end }}{{ end }}</p>
+    <p>
+      Powered by <a href="http://gohugo.io" target="_blank">Hugo</a>,
+      Theme <a href="https://github.com/" target="_blank">Figroll</a>
+      designed by <a href="https://www.figroll.io" target="_blank">Figroll.io</a></p>
+  </div>
+</footer>
+
+
+
+
+  </body>
+</html>
